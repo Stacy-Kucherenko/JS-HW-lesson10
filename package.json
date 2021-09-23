@@ -1,0 +1,8 @@
+{
+    "name": "expressapp",
+    "version": "1.0.0",
+    "devDependencies": {
+        "express": "4.16.4",
+        "npm": "^7.24.0"
+    }
+}

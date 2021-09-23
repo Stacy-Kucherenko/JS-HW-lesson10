@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 9/10</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="task9.js"></script>
+</head>
+<body>
+  
+  <h1>AJAX methods</h1>
+	<form>
+		<input id="Surname" type="text" placeholder="Фамилия" onkeyup="check()"><br><br>
+		<input id="Name" type="text" placeholder="Имя" onkeyup="check()"><br><br>
+		<input id="Age" type="text" placeholder="Возраст" onkeyup="check()" onblur="validateAge()"><br><br>
+		<input id="Address" type="text" placeholder="Место проживания" onkeyup="check()"><br>
+		<p id="Message">To send the form, you must fill in all the fields correctly!</p>
+		<input id="AjaxGET" type="button" value="Ajax GET" onclick="sendDataByGetMethod()" disabled>
+		<input id="AjaxPOST" type="button" value="Ajax POST" onclick="sendDataByPostMethod()" disabled>
+		<input type="button" value="Clear Fields" onclick="clearFields()">
+	</form>
+
+	<style>
+	.error { border-color: red }
+	</style>
+
+</body>
+</html>
